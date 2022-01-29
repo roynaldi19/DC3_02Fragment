@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">BFAA01_04Fragment</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="this_profile">Ini activity Profile</string>
+    <string name="this_category">Ini fragment Category</string>
+    <string name="category_lifestyle">Ke fragment Lifestyle</string>
+    <string name="category_name">Category Name</string>
+    <string name="category_description">Category Description</string>
+    <string name="to_profile">Ke Halaman Profile Activity</string>
+    <string name="show_dialog">Tampilkan sebuah dialog</string>
+    <string name="hello_home_fragment">Hello Ini Home Fragment</string>
+    <string name="to_category">Ke fragment Category</string>
+    <string name="question_player">Siapa pemain terbaik CHELSEA FC?</string>
+    <string name="peter_cech">Peter Cech</string>
+    <string name="john_terry">John Terry</string>
+    <string name="ashley_cole">Ashley Cole</string>
+    <string name="micahel_essien">Michael Essien</string>
+    <string name="frank_lampard">Frank Lampard</string>
+    <string name="eden_hazard">Eden Hazard</string>
+    <string name="didier_drogba">Didier Drogba</string>
+    <string name="choose">Pilih</string>
+    <string name="close">Tutup</string>
+</resources>
