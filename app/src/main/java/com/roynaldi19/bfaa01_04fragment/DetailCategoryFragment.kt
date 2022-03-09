@@ -12,7 +12,6 @@ import androidx.fragment.app.Fragment
 
 
 class DetailCategoryFragment : Fragment() {
-
     lateinit var tvCategoryName: TextView
     lateinit var tvCategoryDescription: TextView
     lateinit var btnProfile: Button
@@ -25,18 +24,15 @@ class DetailCategoryFragment : Fragment() {
         var EXTRA_DESCRIPTION = "extra_description"
     }
 
-
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_detail_category, container, false)
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-
         tvCategoryName = view.findViewById(R.id.tv_category_name)
         tvCategoryDescription = view.findViewById(R.id.tv_category_description)
         btnProfile = view.findViewById(R.id.btn_profile)
