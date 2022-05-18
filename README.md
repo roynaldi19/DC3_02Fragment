@@ -7,5 +7,3 @@
   <img width="240" alt="Screenshot_2022-03-09-10-05-29-101_com example 1" src="https://user-images.githubusercontent.com/32328761/168947294-39f4a60d-f809-400f-ba89-cc699cf81efc.jpg">
   <img width="240" alt="Screenshot_2022-03-09-10-05-29-101_com example 1" src="https://user-images.githubusercontent.com/32328761/168947297-97f9c9e9-ceec-408c-ac44-badcbea1c47d.jpg">
   <img width="240" alt="Screenshot_2022-03-09-10-05-29-101_com example 1" src="https://user-images.githubusercontent.com/32328761/168732636-642cc4b0-4fcf-4656-ac92-446f2dcf0a5f.png">
-  <img width="240" alt="Screenshot_2022-03-09-10-05-29-101_com example 1" src="https://user-images.githubusercontent.com/32328761/168947300-bb9d3e4e-23d5-4a76-921a-028e1cd8f963.jpg">
-  <img width="240" alt="Screenshot_2022-03-09-10-05-29-101_com example 1" src="https://user-images.githubusercontent.com/32328761/168947301-38cd620a-111f-4608-a459-27a3c85f839a.jpg">
