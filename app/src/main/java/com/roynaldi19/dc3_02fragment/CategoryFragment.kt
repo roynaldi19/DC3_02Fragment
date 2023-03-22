@@ -1,4 +1,4 @@
-package com.roynaldi19.bfaa01_04fragment
+package com.roynaldi19.dc3_02fragment
 
 import android.os.Bundle
 import android.view.LayoutInflater

@@ -1,4 +1,4 @@
-package com.roynaldi19.bfaa01_04fragment
+package com.roynaldi19.dc3_02fragment
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4
