@@ -42,7 +42,5 @@ class CategoryFragment : Fragment(), View.OnClickListener {
                 commit()
             }
         }
-
     }
-
 }

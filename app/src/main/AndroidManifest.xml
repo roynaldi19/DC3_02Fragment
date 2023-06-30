@@ -10,7 +10,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.BFAA01_04Fragment">
         <activity
-            android:name="com.roynaldi19.dc3_02fragment.MainActivity"
+            android:name=".ProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

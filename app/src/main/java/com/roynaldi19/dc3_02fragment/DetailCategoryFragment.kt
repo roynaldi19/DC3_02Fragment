@@ -1,15 +1,16 @@
 package com.roynaldi19.dc3_02fragment
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import com.roynaldi19.dc3_02fragment.databinding.FragmentDetailCategoryBinding
 
 class DetailCategoryFragment : Fragment(), View.OnClickListener {
     private lateinit var binding: FragmentDetailCategoryBinding
-
     var description: String? = null
 
     companion object {
@@ -44,7 +45,23 @@ class DetailCategoryFragment : Fragment(), View.OnClickListener {
     }
 
     override fun onClick(view: View) {
+        when (view.id){
+            binding.btnShowDialog.id -> {
+                val optionDialogFragment = OptionDialogFragment()
+                val fragmentManager = childFragmentManager
+                optionDialogFragment.show(fragmentManager, OptionDialogFragment::class.java.simpleName)
+        }
+            binding.btnProfile.id -> {
+                val intent = Intent(requireActivity(), ProfileActivity::class.java)
+                startActivity(intent)
 
+            }
+        }
     }
 
+    internal var optionDialogListener: OptionDialogFragment.OnOptionDialogListener = object : OptionDialogFragment.OnOptionDialogListener {
+        override fun onOptionChosen(text: String?) {
+            Toast.makeText(requireActivity(), text, Toast.LENGTH_SHORT).show()
+        }
+    }
 }
