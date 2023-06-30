@@ -1,11 +1,10 @@
 package com.roynaldi19.dc3_02fragment
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.roynaldi19.dc3_02fragment.databinding.ActivityMainBinding
+import androidx.fragment.app.Fragment
 import com.roynaldi19.dc3_02fragment.databinding.FragmentHomeBinding
 
 class HomeFragment : Fragment(), View.OnClickListener {
@@ -25,9 +24,19 @@ class HomeFragment : Fragment(), View.OnClickListener {
         binding.btnCategory.setOnClickListener(this)
     }
 
-    override fun onClick(p0: View?) {
-
+    override fun onClick(view: View) {
+        if (view.id == binding.btnCategory.id) {
+            val categoryFragment = CategoryFragment()
+            val fragmentManager = parentFragmentManager
+            fragmentManager.beginTransaction().apply {
+                replace(
+                    R.id.frame_container,
+                    categoryFragment,
+                    CategoryFragment::class.java.simpleName
+                )
+                addToBackStack(null)
+                commit()
+            }
+        }
     }
-
-
 }
