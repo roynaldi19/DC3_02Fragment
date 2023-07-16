@@ -3,6 +3,7 @@ package com.roynaldi19.dc3_02fragment
 import android.os.Bundle
 import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
+import androidx.fragment.app.commit
 import com.roynaldi19.dc3_02fragment.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -19,9 +20,9 @@ class MainActivity : AppCompatActivity() {
 
         if (fragment !is HomeFragment) {
             Log.d("MyFlexibleFragment", "Fragment Name :" + HomeFragment::class.java.simpleName)
-            fragmentManager.beginTransaction()
-                .add(R.id.frame_container, homeFragment, HomeFragment::class.java.simpleName)
-                .commit()
+            fragmentManager.commit {
+                add(R.id.frame_container, homeFragment, HomeFragment::class.java.simpleName)
+            }
         }
     }
 }

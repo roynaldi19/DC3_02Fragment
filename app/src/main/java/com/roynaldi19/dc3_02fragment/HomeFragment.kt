@@ -5,6 +5,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.fragment.app.commit
 import com.roynaldi19.dc3_02fragment.databinding.FragmentHomeBinding
 
 class HomeFragment : Fragment(), View.OnClickListener {
@@ -28,14 +29,13 @@ class HomeFragment : Fragment(), View.OnClickListener {
         if (view.id == binding.btnCategory.id) {
             val categoryFragment = CategoryFragment()
             val fragmentManager = parentFragmentManager
-            fragmentManager.beginTransaction().apply {
+            fragmentManager.commit {
+                addToBackStack(null)
                 replace(
                     R.id.frame_container,
                     categoryFragment,
                     CategoryFragment::class.java.simpleName
                 )
-                addToBackStack(null)
-                commit()
             }
         }
     }
